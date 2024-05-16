@@ -20,7 +20,7 @@ public class LocationCombinationsTest {
     }
 
     @Test
-    @DisplayName("Проверяем выигрыш при комбинации в первой строке")
+    @DisplayName("Проверяем выигрыш при комбинации во второй строке")
     public void checkLocationCombinationSecondLine() {
         InitializeBoard initializeBoard = new InitializeBoard();
         String[][] fakeBoard = {
@@ -33,7 +33,7 @@ public class LocationCombinationsTest {
     }
 
     @Test
-    @DisplayName("Проверяем выигрыш при комбинации в первой строке")
+    @DisplayName("Проверяем выигрыш при комбинации в третьей строке")
     public void checkLocationCombinationThirdLine() {
         InitializeBoard initializeBoard = new InitializeBoard();
         String[][] fakeBoard = {
@@ -46,7 +46,7 @@ public class LocationCombinationsTest {
     }
 
     @Test
-    @DisplayName("Проверяем выигрыш при комбинации в первой строке")
+    @DisplayName("Проверяем выигрыш при комбинации в первой колонке")
     public void checkLocationCombinationFirstColumn() {
         InitializeBoard initializeBoard = new InitializeBoard();
         String[][] fakeBoard = {
@@ -59,7 +59,7 @@ public class LocationCombinationsTest {
     }
 
     @Test
-    @DisplayName("Проверяем выигрыш при комбинации в первой строке")
+    @DisplayName("Проверяем выигрыш при комбинации во второй колонке")
     public void checkLocationCombinationSecondColumn() {
         InitializeBoard initializeBoard = new InitializeBoard();
         String[][] fakeBoard = {
@@ -72,7 +72,7 @@ public class LocationCombinationsTest {
     }
 
     @Test
-    @DisplayName("Проверяем выигрыш при комбинации в первой строке")
+    @DisplayName("Проверяем выигрыш при комбинации в третьей колонке")
     public void checkLocationCombinationThirdColumn() {
         InitializeBoard initializeBoard = new InitializeBoard();
         String[][] fakeBoard = {
@@ -85,7 +85,7 @@ public class LocationCombinationsTest {
     }
 
     @Test
-    @DisplayName("Проверяем выигрыш при комбинации в первой строке")
+    @DisplayName("Проверяем выигрыш при комбинации по диагонали 1")
     public void checkLocationCombinationFirstDiagonally() {
         InitializeBoard initializeBoard = new InitializeBoard();
         String[][] fakeBoard = {
@@ -94,11 +94,11 @@ public class LocationCombinationsTest {
                 {" X ", " * ", " * "}
         };
 
-        assertTrue(initializeBoard.checkFinishResults(fakeBoard, " X "), "Комбинация по диагонале 1 вернула false");
+        assertTrue(initializeBoard.checkFinishResults(fakeBoard, " X "), "Комбинация по диагонали 1 вернула false");
     }
 
     @Test
-    @DisplayName("Проверяем выигрыш при комбинации в первой строке")
+    @DisplayName("Проверяем выигрыш при комбинации по диагонали 2")
     public void checkLocationCombinationSecondDiagonally() {
         InitializeBoard initializeBoard = new InitializeBoard();
         String[][] fakeBoard = {
@@ -107,6 +107,6 @@ public class LocationCombinationsTest {
                 {" * ", " * ", " X "}
         };
 
-        assertTrue(initializeBoard.checkFinishResults(fakeBoard, " X "), "Комбинация по диагонале 2 вернула false");
+        assertTrue(initializeBoard.checkFinishResults(fakeBoard, " X "), "Комбинация по диагонали 2 вернула false");
     }
 }
