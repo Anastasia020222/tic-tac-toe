@@ -8,5 +8,7 @@ public interface CreateTicTacToe {
 
     void renderingBot(String[][] board);
 
+    boolean checkFinishResults(String[][] board, String el);
+
     void printResults(String[][] board);
 }
